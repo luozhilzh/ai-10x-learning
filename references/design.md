@@ -15,7 +15,7 @@
 | 蓝浅底 | --blue-soft | #eff6ff | chip / 阶梯底 |
 | 辅色 青 | --teal | #0d9488 | 速查表闪卡 |
 | 青浅底 | --teal-soft | #f0fdfa | 闪卡底 |
-| 点缀 琥珀 | --amber | #d97706 | 目标 chip / 警示 |
+| 点缀 琥珀 | --amber | #b45309 | 目标 chip / 警示（深琥珀，文字与 #fffbeb 浅底对比度 ≥4.5:1，满足 AA） |
 | 琥珀浅底 | --amber-soft | #fffbeb | 目标 chip 底 |
 
 > 不使用 sage / forest / chartreuse 等第三方视觉品牌色，避免授权争议。本调色板为本 skill 原创，可自由用于 MIT 范围内的产物。

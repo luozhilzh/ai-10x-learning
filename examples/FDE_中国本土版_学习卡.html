@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>FDE（中国本土市场）· 10 倍速学习法 · 学习卡</title>
+<style>
+:root{
+  --bg:#f8fafc; --surface:#ffffff; --ink:#1e293b; --muted:#64748b;
+  --line:#e2e8f0; --blue:#2563eb; --blue-soft:#eff6ff;
+  --teal:#0d9488; --teal-soft:#f0fdfa; --amber:#b45309; --amber-soft:#fffbeb;
+  --radius:12px;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px;}
+header{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:20px;}
+h1{font-size:22px;margin:0 0 4px;}
+.sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--blue-soft);color:var(--blue);}
+.chip.teal{background:var(--teal-soft);color:var(--teal);}
+.chip.amber{background:var(--amber-soft);color:var(--amber);}
+section{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:20px;}
+h2{font-size:17px;margin:0 0 16px;display:flex;align-items:center;gap:8px;}
+h2 .dot{width:10px;height:10px;border-radius:50%;background:var(--blue);}
+.ladder{display:flex;flex-direction:column;gap:10px;}
+.lvl{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--blue-soft);}
+.lvl .num{width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;}
+.lvl .body{font-size:14px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.flash{background:var(--teal-soft);border:1px solid #ccfbf1;border-radius:10px;padding:14px;}
+.flash .q{font-weight:600;font-size:14px;color:var(--teal);margin-bottom:6px;}
+.flash .a{font-size:13px;color:var(--ink);}
+.qa{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px;}
+.qa .q{font-weight:600;font-size:14px;margin-bottom:6px;}
+.qa .q .tag{font-size:11px;color:var(--muted);margin-left:6px;}
+.qa .a{font-size:13px;color:var(--muted);}
+footer{color:var(--muted);font-size:12px;text-align:center;margin-top:8px;}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <header>
+    <h1>FDE（中国本土市场）· 10 倍速学习法</h1>
+    <p class='sub'>AI 10x 学习法 · 学习成果卡（核心版）</p>
+    <div class='chips'>
+      <span class='chip'>角色：想在国内做 / 转 FDE 的技术人</span>
+      <span class='chip teal'>时间预算：核心 2 小时 + 一周资源路径</span>
+      <span class='chip amber'>目标：面试 / 转岗能讲清中美 FDE 差异，并产出本土化准备清单</span>
+    </div>
+  </header>
+  <section>
+    <h2><span class='dot'></span>学习阶梯</h2>
+    <div class='ladder'>
+<div class='lvl'><span class='num'>1</span><div class='body'><b>L1 完全初学者</b>：理解中国 FDE 是什么、与传统售前 / 实施的根本区别；能向朋友解释「国内云厂商为何都在抢 FDE」。</div></div>
+<div class='lvl'><span class='num'>2</span><div class='body'><b>L2 基本理解</b>：跑通一次国内部署闭环（决策链→私有化 PoC→信创集成→等保上线→反馈产品）；讲清国企 / 金融 PoC 里 FDE 具体做哪几件事。</div></div>
+<div class='lvl'><span class='num'>3</span><div class='body'><b>L3 实际使用者</b>：在国企 / 金融 / 制造客户跑 discovery、做数据不出域的私有化原型、集成进企微 / 钉钉 / 飞书内网。</div></div>
+<div class='lvl'><span class='num'>4</span><div class='body'><b>L4 问题解决者</b>：处理信创适配失败、等保卡脖、stakeholder 政治、范围蔓延；在「无文档 / 合规卡脖 / 关系复杂」下推进并设边界、懂升级。</div></div>
+<div class='lvl'><span class='num'>5</span><div class='body'><b>L5 自信实践者</b>：端到端 owner 国内账户、把共性需求沉淀成公司标准资产、规划退出 / 成长；让产品因你的反馈而改。</div></div>
+</div>
+  </section>
+  <section>
+    <h2><span class='dot'></span>一页速查表（闪卡）</h2>
+    <div class='grid'>
+<div class='flash'><div class='q'>一句话定义</div><div class='a'>中国 FDE = 在「关系驱动 + 私有化 + 强合规 + 信创」土壤里，把大模型落地成客户肯签单 / 续费的结果的人；比美国多扛「合规 + 关系决策链」两座山。</div></div>
+<div class='flash'><div class='q'>中美部署形态</div><div class='a'>中国以私有化 / 一体机 / 信创适配为主；美国以云 API / SaaS 为主——合规与信创驱动。</div></div>
+<div class='flash'><div class='q'>第四硬技能（合规）</div><div class='a'>PIPL / 等保三级 / 数据出境安全评估 / 国密 SM 系列 / 算法备案——美国 FDE 在国内基本不直面这套。</div></div>
+<div class='flash'><div class='q'>discovery 重心</div><div class='a'>从「用户痛点」转向「决策链 + 关键人 + 数据出域限制」（关系驱动 + 招投标 + 一把手拍板 + 定制化陷阱）。</div></div>
+<div class='flash'><div class='q'>国内部署闭环</div><div class='a'>发现决策链 → 私有化 PoC → 信创集成 → 等保上线 → 反馈产品；双向反馈是价值来源。</div></div>
+<div class='flash'><div class='q'>上场前清单</div><div class='a'>能讲 3 个不同 / 画得出闭环（含等保 / 数据出域）/ 四项打分知短板 / 按部署形态筛好公司 / 有本地 mini 原型 / 想清反馈权 / 会反向提问。</div></div>
+</div>
+  </section>
+  <section>
+    <h2><span class='dot'></span>题库（考到崩溃）</h2>
+    <div class='bank'>
+<div class='qa'><div class='q'>Q1（初）国内 FDE 是什么缩写、字面意思？<span class='tag'>初级</span></div><div class='a'>Forward Deployed Engineer，前沿 / 前线部署工程师。</div></div>
+<div class='qa'><div class='q'>Q2（初）国内哪些大厂在招 FDE？举 2–3 个。<span class='tag'>初级</span></div><div class='a'>字节（豆包 / 火山）、腾讯云、阿里云、蚂蚁数科、智谱等。</div></div>
+<div class='qa'><div class='q'>Q3（初）相比传统「实施工程师 / 技术售前」最关键不同？<span class='tag'>初级</span></div><div class='a'>更贴产品、写更多生产级代码、把一线经验反哺成标准资产（而非只交付）。</div></div>
+<div class='qa'><div class='q'>Q4（中）中美 FDE 部署形态最根本差异？<span class='tag'>中级</span></div><div class='a'>中国以私有化 / 一体机 / 信创适配为主，美国以云 API / SaaS 为主。</div></div>
+<div class='qa'><div class='q'>Q5（中）为什么说多了一项「第四硬技能」——合规？列举 3 个。<span class='tag'>中级</span></div><div class='a'>PIPL、等保三级、数据出境安全评估（或国密 / 算法备案）。</div></div>
+<div class='qa'><div class='q'>Q6（中）中国客户文化不同如何影响 discovery？<span class='tag'>中级</span></div><div class='a'>关系驱动 + 招投标 + 一把手拍板 + 定制化陷阱；discovery 重心从「用户痛点」转向「决策链 + 关键人」。</div></div>
+<div class='qa'><div class='q'>Q7（高）真实落地最大「非技术 + 非纯关系」难点？<span class='tag'>高级</span></div><div class='a'>信创 / 国产芯片与 OS 适配失败、数据不出域致模型效果打折、等保与合规卡脖。</div></div>
+<div class='qa'><div class='q'>Q8（高）何时升级给产品 / 销售 / 法务而非硬扛？<span class='tag'>高级</span></div><div class='a'>触及合规红线（等保 / 数据出境）、产品核心能力缺口、超授权、招投标违规风险。</div></div>
+<div class='qa'><div class='q'>Q9（专）为什么说「定制化」是双刃剑？<span class='tag'>专家</span></div><div class='a'>卖结果需要定制，但也最易锁死成实施苦力、攒不到可迁移能力；解法 = 推动共性标准化。</div></div>
+<div class='qa'><div class='q'>Q10（专）为什么「把个例沉淀成标准模板」是最稀缺杠杆？<span class='tag'>专家</span></div><div class='a'>国内产品成熟度参差 + 定制陷阱，能把共性抽成公司资产的人既帮公司 scale 又攒稀缺能力——这正是面试官最爱听的「反馈权」故事。</div></div>
+</div>
+  </section>
+  <footer>由 ai-10x-learning skill 生成 · 互动在对话中发生，此卡为学习成果收尾</footer>
+</div>
+</body>
+</html>
