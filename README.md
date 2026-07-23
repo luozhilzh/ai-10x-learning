@@ -27,6 +27,25 @@
 
 > 注：agentic 工具（WorkBuddy / Claude Code / Cursor）会自动按 `description` 触发或支持 `/ai-10x-learning` 手动调用，并强制遵守 SKILL.md 里的"交互硬规则"（如考到崩溃一次一题）。纯对话工具里这些规则只是提示词，需你手动驱动问答节奏。
 
+### 一键安装脚本
+
+仓库内置 `install.sh`，自动把整个 skill 包复制到目标工具的 skills 目录（排除 `.git`）：
+
+```bash
+# 安装到全部 4 款工具（WorkBuddy / Claude Code / Codex / Cursor）
+./install.sh
+
+# 只装到某一款
+./install.sh --target claude
+
+# 装到当前项目（项目级 .workbuddy/skills/，仅当前仓库生效）
+./install.sh --project
+```
+
+- **Windows 用户**：请用 **Git Bash** 运行（不要直接双击 `.sh`）。
+- 脚本自动识别 `HOME`（Windows Git Bash 下为 `/c/Users/你的用户名`），无需手动改路径。
+- 安装后**重启工具会话**，`/ai-10x-learning` 才会被识别。
+
 ## 目录结构
 
 ```
@@ -35,6 +54,7 @@ ai-10x-learning/
 ├── README.md                             # 本文件
 ├── LICENSE                               # MIT
 ├── .gitignore                            # 忽略本地日志 / 编辑器产物
+├── install.sh                            # 一键安装脚本（跨工具，支持 --target / --project）
 ├── references/
 │   └── prompts.md                        # 10 套完整提示词（工具无关）
 └── examples/
