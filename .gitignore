@@ -1,0 +1,23 @@
+# 操作系统 / 编辑器产物
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 日志（本地工作日志等，勿入库）
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node
+node_modules/
+
+# 环境变量 / 密钥
+.env
+.env.*
+
+# 本地记忆与笔记（如本 skill 置于含 .workbuddy 的项目内）
+.workbuddy/
