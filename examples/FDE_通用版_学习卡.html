@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>FDE（Forward Deployed Engineer）· 10 倍速学习法 · 学习卡</title>
+<style>
+:root{
+  --bg:#f8fafc; --surface:#ffffff; --ink:#1e293b; --muted:#64748b;
+  --line:#e2e8f0; --blue:#2563eb; --blue-soft:#eff6ff;
+  --teal:#0d9488; --teal-soft:#f0fdfa; --amber:#d97706; --amber-soft:#fffbeb;
+  --radius:12px;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px;}
+header{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:20px;}
+h1{font-size:22px;margin:0 0 4px;}
+.sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--blue-soft);color:var(--blue);}
+.chip.teal{background:var(--teal-soft);color:var(--teal);}
+.chip.amber{background:var(--amber-soft);color:var(--amber);}
+section{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:20px;}
+h2{font-size:17px;margin:0 0 16px;display:flex;align-items:center;gap:8px;}
+h2 .dot{width:10px;height:10px;border-radius:50%;background:var(--blue);}
+.ladder{display:flex;flex-direction:column;gap:10px;}
+.lvl{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--blue-soft);}
+.lvl .num{width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;}
+.lvl .body{font-size:14px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.flash{background:var(--teal-soft);border:1px solid #ccfbf1;border-radius:10px;padding:14px;}
+.flash .q{font-weight:600;font-size:14px;color:var(--teal);margin-bottom:6px;}
+.flash .a{font-size:13px;color:var(--ink);}
+.qa{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px;}
+.qa .q{font-weight:600;font-size:14px;margin-bottom:6px;}
+.qa .q .tag{font-size:11px;color:var(--muted);margin-left:6px;}
+.qa .a{font-size:13px;color:var(--muted);}
+footer{color:var(--muted);font-size:12px;text-align:center;margin-top:8px;}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <header>
+    <h1>FDE（Forward Deployed Engineer）· 10 倍速学习法</h1>
+    <p class='sub'>AI 10x 学习法 · 学习成果卡（核心版）</p>
+    <div class='chips'>
+      <span class='chip'>角色：技术人（想搞懂 / 转岗 / 面试 FDE）</span>
+      <span class='chip teal'>时间预算：约 1 周（核心 2 小时）</span>
+      <span class='chip amber'>目标：搞懂 FDE 是什么、与 SWE/售前的不同、要练什么、值不值得入</span>
+    </div>
+  </header>
+  <section>
+    <h2><span class='dot'></span>学习阶梯</h2>
+    <div class='ladder'><div class='lvl'><div class='num'>L1</div><div class='body'><b>完全初学者</b> · 理解 FDE 是什么、与 SWE/售前(SE) 的根本区别；里程碑：能一句话向朋友解释"前线部署工程师干嘛"。</div></div>
+<div class='lvl'><div class='num'>L2</div><div class='body'><b>基本理解</b> · 理解一次部署闭环（发现→原型→集成→部署→反馈）；里程碑：能讲清一次客户 POC 里 FDE 做哪几件事。</div></div>
+<div class='lvl'><div class='num'>L3</div><div class='body'><b>实际使用者</b> · 能独立主持客户发现访谈并产出迷你原型 demo；里程碑：给一个假客户做完 discovery + 可跑原型。</div></div>
+<div class='lvl'><div class='num'>L4</div><div class='body'><b>问题解决者</b> · 处理企业脏数据、合规、stakeholder 政治、范围蔓延；里程碑：能写出"项目边界+升级路径"说明。</div></div>
+<div class='lvl'><div class='num'>L5</div><div class='body'><b>自信的实践者</b> · 端到端 owner 一个账户、把反馈变成产品影响力、规划退出/成长；里程碑：写一份"我的 FDE 经历→下一步"成长地图。</div></div></div>
+  </section>
+  <section>
+    <h2><span class='dot'></span>一页速查表（闪卡）</h2>
+    <div class='grid'><div class='flash'><div class='q'>一句话定义</div><div class='a'>FDE = 驻扎客户现场、既写代码又懂业务还扛沟通的"产品落地尖兵"，把通用产品变成客户肯付钱的具体方案，并把一线痛点喂回产品。</div></div>
+<div class='flash'><div class='q'>本质</div><div class='a'>编码 + 业务翻译 + 客户沟通 三合一，介于 SWE 与售前之间但更偏技术。</div></div>
+<div class='flash'><div class='q'>部署闭环</div><div class='a'>发现需求 → 原型 → 集成客户系统 → 部署上线 → 反馈回产品。</div></div>
+<div class='flash'><div class='q'>公司视角</div><div class='a'>缩短销售周期、提高 POC 成功率，ROI 高。</div></div>
+<div class='flash'><div class='q'>个人视角</div><div class='a'>杠杆来自"反馈权"与"需求→系统"能力，是职业期权而非当期高薪。</div></div>
+<div class='flash'><div class='q'>关键风险</div><div class='a'>易被稀释成出差型集成苦力；体验取决于产品阶段（早期高杠杆 / 成熟低成长）。</div></div></div>
+  </section>
+  <section>
+    <h2><span class='dot'></span>题库（考到崩溃）</h2>
+    <div class='bank'><div class='qa'><div class='q'>Q1（初）FDE 是什么的缩写、字面意思？<span class='tag'>初级</span></div><div class='a'>Forward Deployed Engineer，前线部署工程师。</div></div>
+<div class='qa'><div class='q'>Q2（初）FDE 相比售前(SE) 最关键的不同？<span class='tag'>初级</span></div><div class='a'>FDE 写更多生产级代码、更贴近产品路线图与反馈。</div></div>
+<div class='qa'><div class='q'>Q3（初）FDE 主要解决公司的什么问题？<span class='tag'>初级</span></div><div class='a'>把通用产品/模型变成客户肯付钱的具体方案，缩短销售周期。</div></div>
+<div class='qa'><div class='q'>Q4（中）一次部署闭环有哪几步？<span class='tag'>中级</span></div><div class='a'>发现需求 → 原型 → 集成到客户系统 → 部署上线 → 反馈回产品。</div></div>
+<div class='qa'><div class='q'>Q5（中）FDE 的三项核心能力是什么？<span class='tag'>中级</span></div><div class='a'>编码能力 + 业务/领域翻译 + 客户沟通与信任。</div></div>
+<div class='qa'><div class='q'>Q6（中）为什么 FDE 体验高度依赖"公司产品阶段"？<span class='tag'>中级</span></div><div class='a'>早期产品=共创高杠杆，成熟产品=实施低成长，同一头衔天差地别。</div></div>
+<div class='qa'><div class='q'>Q7（高）FDE 真实落地最大的非技术难点通常是什么？<span class='tag'>高级</span></div><div class='a'>无权限 / 无文档 / 客户防备的"政治+环境"夹缝。</div></div>
+<div class='qa'><div class='q'>Q8（高）什么时候该把问题升级给产品/销售而非自己硬扛？<span class='tag'>高级</span></div><div class='a'>触及产品核心能力缺口、合规/合同风险、超出授权时。</div></div>
+<div class='qa'><div class='q'>Q9（专）FDE 经历里最该带走的"通用能力"是什么？<span class='tag'>专家</span></div><div class='a'>把模糊需求变成可用系统的能力，产品/创业/架构都通用。</div></div>
+<div class='qa'><div class='q'>Q10（专）为什么说 FDE 对个人的杠杆来自"反馈权"而非头衔？<span class='tag'>专家</span></div><div class='a'>只有把一线需求接进产品，才同时帮公司省钱、给自己攒稀缺能力；被禁反馈权=两头杠杆都塌。</div></div></div>
+  </section>
+  <footer>由 ai-10x-learning skill 生成 · 互动在对话中发生，此卡为学习成果收尾</footer>
+</div>
+</body>
+</html>
