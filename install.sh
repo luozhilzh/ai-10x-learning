@@ -67,6 +67,9 @@ user_target_dir() {
 
 install_to() {
   local dest="$1"
+  if [ -d "$dest" ] && [ -n "$(ls -A "$dest" 2>/dev/null)" ]; then
+    echo "  ⚠️  目标已存在，将被覆盖: $dest"
+  fi
   mkdir -p "$dest"
   # 从脚本所在目录复制，排除 .git（安装位置不需要 git 元数据）
   (cd "$SCRIPT_DIR" && tar cf - --exclude='.git' . | (cd "$dest" && tar xf -))

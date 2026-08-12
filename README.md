@@ -2,6 +2,8 @@
 
 > **仓库短描述（可作 GitHub / Gitee 仓库 Description）**：AI 10x 学习法 —— 用 AI 真正"学会"的 10 步闭环 skill，跨 WorkBuddy / Claude Code / Codex / Cursor 通用。
 
+> **方法论与归属**：方法论同源于斯坦福 STORM 多视角研究法 + Rahul 六角色学习框架；部分工程化能力借鉴自 Daliu-Awesome-Skills（遵循其许可证）。
+
 用 AI 真正"学会"（而非只拿答案）的 10 步闭环学习法。融合斯坦福 STORM 多视角研究法与 Rahul 的六角色学习框架。
 
 - **研究模式（步骤 1–4）**：搞懂 / 调研 / 写方案 / 重大决策前
