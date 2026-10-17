@@ -14,7 +14,7 @@
 
 ## 为什么是"通用"的
 
-本 Skill 采用开放的 **Agent Skills 标准**：一个 `SKILL.md`（含 YAML frontmatter：`name` + `description`）+ 可选的 `references/`、`scripts/`、`assets/`。
+本 Skill 采用开放的 **Agent Skills 标准**：一个 `SKILL.md`（含 YAML frontmatter：`name` + `description`，及可选的 `version` 等扩展字段）+ 可选的 `references/`、`scripts/`、`assets/`。
 该标准由 Anthropic 提出，**Claude Code、Codex、Cursor、WorkBuddy 均兼容同一格式**——同一个文件夹丢进任一工具的 skills 目录即可，无需改写。
 
 ## 跨工具安装
