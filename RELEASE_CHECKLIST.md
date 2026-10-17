@@ -7,7 +7,7 @@
 ## A. 仓库就绪度（已实测 ✅）
 
 - ✅ **MIT LICENSE** 存在，版权 `luozhi` 2026
-- ✅ **SKILL.md frontmatter** 仅 `name` + `description`（符合 Agent Skills 开放标准，Claude Code / Codex / Cursor / WorkBuddy 通用）
+- ✅ **SKILL.md frontmatter**：`name` + `version` + `description`（`version` 为版本管理自增字段；开放标准工具读取 `name`/`description`，额外字段不影响加载，Claude Code / Codex / Cursor / WorkBuddy 通用）
 - ✅ **协议层无硬编码工具名**（能力感知三层降级：有联网工具→取证；agentic 无工具→标 `[需核实]`；纯对话→用户即来源）
 - ✅ **.gitignore** 覆盖 `.DS_Store` / `*.log` / `.workbuddy/` / `.env` / `node_modules` / `__pycache__`
 - ✅ **examples 脱敏扫描**：无密钥 / 邮箱 / 手机号 / 微信等敏感信息泄漏
