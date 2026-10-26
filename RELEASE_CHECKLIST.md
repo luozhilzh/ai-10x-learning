@@ -1,6 +1,6 @@
 # ai-10x-learning 开源发布清单
 
-> 最后核验：2026-07-23。✅ = 本次本地实测通过；☐ = 需你（或发布动作）完成。
+> 最后核验：2026-10-26（v1.2.0）。✅ = 本次本地实测通过；☐ = 需你（或发布动作）完成。
 
 ---
 
@@ -11,7 +11,7 @@
 - ✅ **协议层无硬编码工具名**（能力感知三层降级：有联网工具→取证；agentic 无工具→标 `[需核实]`；纯对话→用户即来源）
 - ✅ **.gitignore** 覆盖 `.DS_Store` / `*.log` / `.workbuddy/` / `.env` / `node_modules` / `__pycache__`
 - ✅ **examples 脱敏扫描**：无密钥 / 邮箱 / 手机号 / 微信等敏感信息泄漏
-- ✅ **git 工作树干净**（最新 commit `1b7d50e` 含 C/D/E 全部改动）
+- ✅ **git 工作树**：修改前基线 `3df848d`（v1.1.2）干净；v1.2.0 改动待提交
 - ✅ **无大二进制文件**，纯文本包，clone 轻量
 
 ## B. 跨工具安装（已实测 ✅）
@@ -29,7 +29,7 @@
 
 - ☐ 仓库描述 + **Topics**（建议：`agent-skills`, `claude-code`, `cursor`, `codex`, `workbuddy`, `learning`, `prompt-engineering`, `study-method`）
 - ☐ README 顶部徽章（可选，不阻塞）：License / 版本
-- ☐ 首次 Release：打 tag **v1.0.0**，Release note 见下方模板
+- ☐ Release：tag 已打至 **v1.1.2**，本版打 **v1.2.0**；Release note 参考下方 v1.0.0 模板改写
 
 ## E. 发布动作（☐ 你执行）
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 附：Release note 模板（v1.0.0）
+## 附：Release note 模板（v1.0.0 存档，新版本按此结构改写）
 
 ```markdown
 # AI 10x 学习法 Skill v1.0.0
